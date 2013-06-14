@@ -64,7 +64,7 @@ class HTMLGenerator
   end
 
   def economy_drinks
-    products = retrieve_json_data("http://lcboapi.com/products?order=alcohol_content.desc,price_per_liter_of_alcohol_in_cents.desc&page=1")
+    products = retrieve_json_data("http://lcboapi.com/products?order=alcohol_content.desc,price_per_liter_of_alcohol_in_cents.asc&page=1")
     print_html_header
     products.each do |product|
       puts "  <div class='pure-u-1-2'>"
