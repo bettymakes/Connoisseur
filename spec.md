@@ -1,6 +1,8 @@
 
 - Index - display many products (20 items)
 
+- Error handling on status 404?
+
 ---
 
 - Show - display a specific product page
