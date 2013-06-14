@@ -113,11 +113,16 @@ class HTMLGenerator
     puts "  <link rel='stylesheet' href='custom.css'>"
     puts "</head>"
     puts "<body>"
+    puts "<div class='header'>"
+    puts "<h1>Title Goes Here</h1>"
+    puts "</div>"
+    puts "<div class='container'>"
     puts "<div class='pure-g-r'>"
     puts "\n"
   end
 
   def print_html_footer
+    puts "</div>"
     puts "</div>"
     puts "</body>"
     puts "</html>"
